@@ -18,6 +18,12 @@ export const rootReducer = (state = initialState, action) => {
     case 'tasks/addTask': {
       return { ...state, tasks: [...state.tasks, action.payload] };
     }
+    case 'tasks/deleteTask':
+      return {
+        ...state,
+        tasks: state.tasks.filter(task => task.id !== action.payload),
+      };
+
     default:
       return state;
   }
