@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/goit-react-textbook-lesson-11-task-manager/static/css/main.aaaf48ca.css",
-    "main.js": "/goit-react-textbook-lesson-11-task-manager/static/js/main.4bb8fa5f.js",
+    "main.js": "/goit-react-textbook-lesson-11-task-manager/static/js/main.22bdd0a5.js",
     "index.html": "/goit-react-textbook-lesson-11-task-manager/index.html",
     "main.aaaf48ca.css.map": "/goit-react-textbook-lesson-11-task-manager/static/css/main.aaaf48ca.css.map",
-    "main.4bb8fa5f.js.map": "/goit-react-textbook-lesson-11-task-manager/static/js/main.4bb8fa5f.js.map"
+    "main.22bdd0a5.js.map": "/goit-react-textbook-lesson-11-task-manager/static/js/main.22bdd0a5.js.map"
   },
   "entrypoints": [
     "static/css/main.aaaf48ca.css",
-    "static/js/main.4bb8fa5f.js"
+    "static/js/main.22bdd0a5.js"
   ]
 }
