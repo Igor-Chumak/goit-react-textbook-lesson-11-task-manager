@@ -1,10 +1,11 @@
 import { Button } from 'components/Button/Button';
 import { useSelector } from 'react-redux';
-import css from './StatusFilter.module.css';
 import { statusFilters } from 'redux/constants';
+import { getStatusFilter } from 'redux/selectors';
+import css from './StatusFilter.module.css';
 
 export const StatusFilter = () => {
-  const filter = useSelector(state => state.filters.status);
+  const filter = useSelector(getStatusFilter);
   return (
     <div className={css.wrapper}>
       <Button selected={filter === statusFilters.all}>All</Button>
