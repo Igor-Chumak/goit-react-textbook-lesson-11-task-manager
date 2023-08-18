@@ -4,9 +4,16 @@
 
 // const enhancer = devToolsEnhancer();
 // export const store = createStore(rootReducer, enhancer);
+
 //
 //  Redux Toolkit
 //
 import { configureStore } from '@reduxjs/toolkit';
-import { rootReducer } from './reducer';
-export const store = configureStore({ reducer: rootReducer });
+import { filtersReducer, tasksReducer } from './reducer';
+
+export const store = configureStore({
+  reducer: {
+    tasks: tasksReducer,
+    filters: filtersReducer,
+  },
+});
