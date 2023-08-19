@@ -48,6 +48,12 @@
 //
 //  Redux Toolkit
 //
+import {
+  addTask,
+  deleteTask,
+  setStatusFilter,
+  toggleCompleted,
+} from './actions';
 import { statusFilters } from './constants';
 
 const tasksInitialState = [
@@ -60,11 +66,11 @@ const tasksInitialState = [
 
 export const tasksReducer = (state = tasksInitialState, action) => {
   switch (action.type) {
-    case 'tasks/addTask':
+    case addTask.type:
       return [...state, action.payload];
-    case 'tasks/deleteTask':
+    case deleteTask.type:
       return state.filter(task => task.id !== action.payload);
-    case 'tasks/toggleCompleted':
+    case toggleCompleted.type:
       return state.map(task => {
         if (task.id !== action.payload) {
           return task;
@@ -82,7 +88,7 @@ const filtersInitialState = {
 
 export const filtersReducer = (state = filtersInitialState, action) => {
   switch (action.type) {
-    case 'filters/setStatusFilter':
+    case setStatusFilter.type:
       return { ...state, status: action.payload };
     default:
       return state;
